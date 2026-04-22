@@ -1,0 +1,140 @@
+/* ===== GLOBAL ===== */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    width: 500px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* ===== TITLE ===== */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* ===== INPUTS ===== */
+.input-box input,
+.input-box textarea,
+.input-box select {
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus,
+.input-box textarea:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102,126,234,0.5);
+}
+
+/* ===== BUTTON ===== */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Add button */
+.input-box button {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+}
+
+.input-box button:hover {
+    transform: scale(1.05);
+}
+
+/* ===== FILTER BUTTONS ===== */
+.filters {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.filters button {
+    margin: 5px;
+    background: #eee;
+}
+
+.filters button:hover {
+    background: #667eea;
+    color: white;
+}
+
+/* ===== COUNTER ===== */
+#counter {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #444;
+}
+
+/* ===== TASK CARD ===== */
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.task:hover {
+    transform: translateY(-3px);
+}
+
+/* ===== COMPLETED TASK ===== */
+.task.done span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+/* ===== BADGES ===== */
+.badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    color: white;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.badge.low {
+    background: #28a745;
+}
+
+.badge.medium {
+    background: #ff9800;
+}
+
+.badge.high {
+    background: #e74c3c;
+}
+
+/* ===== DELETE BUTTON ===== */
+.task button {
+    background: #e74c3c;
+    color: white;
+}
+
+.task button:hover {
+    background: #c0392b;
+}
