@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+
+    <h2>📝 ToDo Manager</h2>
+
+    <!-- Input -->
+    <div class="input-box">
+        <input id="title" placeholder="Enter task...">
+        <textarea id="desc" placeholder="Description"></textarea>
+
+        <select id="priority">
+            <option value="low">Low</option>
+            <option value="medium" selected>Medium</option>
+            <option value="high">High</option>
+        </select>
+
+        <button onclick="addTask()">➕ Add Task</button>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+        <button onclick="loadTasks()">All</button>
+        <button onclick="filterTasks('active')">Active</button>
+        <button onclick="filterTasks('completed')">Completed</button>
+    </div>
+
+    <!-- Counter -->
+    <div id="counter"></div>
+
+    <!-- Task List -->
+    <div id="task-list"></div>
+
+</div>
+
+{% endblock %}
