@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Live Results</h2>
+
+{% for c,v in votes.items() %}
+<p>Candidate {{c}} - {{v}} votes 
+({{ ((v/total)*100)|round(1) if total>0 else 0 }}%)</p>
+
+<div class="bar">
+<div class="fill" style="width: {{ (v/total*100) if total>0 else 0 }}%"></div>
+</div>
+{% endfor %}
+
+{% endblock %}
