@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Admin Dashboard</h2>
+
+<table>
+<tr><th>Candidate</th><th>Votes</th></tr>
+{% for c,v in votes.items() %}
+<tr><td>{{c}}</td><td>{{v}}</td></tr>
+{% endfor %}
+</table>
+
+{% endblock %}
