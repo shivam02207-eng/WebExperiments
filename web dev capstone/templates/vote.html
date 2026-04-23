@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2>Select Candidate</h2>
+
+<form method="POST">
+<div class="grid">
+
+{% for c in candidates %}
+<label class="vote-card">
+<input type="radio" name="candidate" value="{{c}}" required>
+<div class="card-inner">
+    <h3>Candidate {{c}}</h3>
+    <p>Click to vote</p>
+</div>
+</label>
+{% endfor %}
+
+</div>
+
+<button class="btn">Submit Vote</button>
+</form>
+
+{% endblock %}
