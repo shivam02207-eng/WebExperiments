@@ -1,0 +1,110 @@
+body {
+    margin:0;
+    font-family:'Segoe UI';
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    color:white;
+}
+
+.navbar {
+    display:flex;
+    justify-content:space-between;
+    padding:15px 30px;
+    background:rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    color:white;
+    margin:10px;
+    text-decoration:none;
+}
+
+.container {
+    text-align:center;
+    padding:40px;
+}
+
+.hero h1 {
+    font-size:45px;
+    background: linear-gradient(to right,#ff7b00,#ff00cc);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.btn {
+    background:#ff7b00;
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    color:white;
+}
+
+.card {
+    background:white;
+    color:black;
+    padding:30px;
+    border-radius:15px;
+    width:300px;
+    margin:auto;
+}
+
+.grid {
+    display:flex;
+    gap:20px;
+    justify-content:center;
+}
+
+.vote-card {
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.vote-card input {
+    display:none;
+}
+
+.vote-card:hover {
+    transform:scale(1.08);
+}
+
+.card-inner {
+    background:white;
+    color:black;
+    padding:20px;
+    border-radius:15px;
+}
+
+.vote-card input:checked + .card-inner {
+    border:3px solid #ff7b00;
+}
+
+.bar {
+    width:60%;
+    margin:auto;
+    height:20px;
+    background:#ddd;
+    border-radius:10px;
+}
+
+.fill {
+    height:100%;
+    background:green;
+    border-radius:10px;
+    animation:grow 1s ease-in-out;
+}
+
+@keyframes grow {
+    from {width:0;}
+}
+
+table {
+    margin:auto;
+    background:white;
+    color:black;
+    border-radius:10px;
+    padding:10px;
+}
+
+td,th {
+    padding:10px 20px;
+}
